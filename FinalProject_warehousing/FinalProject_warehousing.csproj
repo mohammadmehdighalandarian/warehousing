@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3B783C1-25DA-4087-B493-E034200438B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalProject_warehousing</RootNamespace>
+    <AssemblyName>FinalProject_warehousing</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>warehouse-inventory-icon-33856-Windows.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAccounts.Designer.cs">
+      <DependentUpon>formAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formcustomer.Designer.cs">
+      <DependentUpon>formcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGoods.Designer.cs">
+      <DependentUpon>formGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGrouping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGrouping.Designer.cs">
+      <DependentUpon>formGrouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formListAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formListAccounts.Designer.cs">
+      <DependentUpon>formListAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formListCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formListCustomer.Designer.cs">
+      <DependentUpon>formListCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formListGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formListGoods.Designer.cs">
+      <DependentUpon>formListGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLoading.Designer.cs">
+      <DependentUpon>formLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSettings.Designer.cs">
+      <DependentUpon>formSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formStore.Designer.cs">
+      <DependentUpon>formStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUser.Designer.cs">
+      <DependentUpon>formUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAccounts.resx">
+      <DependentUpon>formAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formcustomer.resx">
+      <DependentUpon>formcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGoods.resx">
+      <DependentUpon>formGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGrouping.resx">
+      <DependentUpon>formGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formListAccounts.resx">
+      <DependentUpon>formListAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formListCustomer.resx">
+      <DependentUpon>formListCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formListGoods.resx">
+      <DependentUpon>formListGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLoading.resx">
+      <DependentUpon>formLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSettings.resx">
+      <DependentUpon>formSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formStore.resx">
+      <DependentUpon>formStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUser.resx">
+      <DependentUpon>formUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person-Male-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse-inventory-icon-33856.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-icon.png" />
+    <None Include="Resources\search-icon.png" />
+    <None Include="Resources\Actions-edit-redo-icon.png" />
+    <None Include="Resources\shop-cart-add-icon.png" />
+    <None Include="Resources\Box-icon.png" />
+    <None Include="Resources\store-icon.png" />
+    <None Include="Resources\Checklist-icon1.png" />
+    <None Include="Resources\Office-Customer-Male-Light-icon.png" />
+    <None Include="Resources\Invoice-icon.png" />
+    <Content Include="warehouse-inventory-icon-33856-Windows.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
